@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div class="content-section-full">
+
+<p>This is a page to test how long Google follows links on a noindex page.</p>
+
+<p>The test was started on {{launch_date}}</p>
+
+<p>The test has been running for {{test_duration}} days.</p>
+
+<p>A robots noindex directive was added to the page after {{test_start_days}} days.</p>
+
+<p>A link to a new URL is generated every day.</p>
+
+<p>
+<ul>
+	<li>
+		<a href="/noindex-test/{{test_id}}/{{test_duration}}/">Link to the latest target page ({{test_duration}})</a>
+	</li>
+</ul>
+</p>
+</div>
+
+{% endblock content %}

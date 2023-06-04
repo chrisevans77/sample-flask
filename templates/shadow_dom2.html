@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  </head>
+
+  <body>
+    <div id="container">Inside Container 1</div>
+    <div id="container-2"></div>
+    <div id="container-3"></div>
+    <h1>DOM element</h1>
+    <script>
+      var root = document.getElementById("container").attachShadow( { mode: "open" } );
+
+      var heading = document.createElement( "h2" );
+      heading.textContent = "Inside First Shadow DOM";
+      heading.id = "inside-shadow";
+      root.appendChild( heading );
+
+      var root = document.getElementById("container-2").attachShadow( { mode: "open" } );
+
+      var heading2 = document.createElement( "h2" );
+      heading2.textContent = "Inside Second Shadow DOM";
+      heading2.id = "inside-shadow-2";
+      root.appendChild( heading2 );
+
+      var root = document.getElementById("container-3").attachShadow( { mode: "open" } );
+      var div1 = document.createElement( "div" );
+      div1.textContent = "Inside Third Shadow DOM";
+      div1.id = "inside-shadow-3";
+      root.appendChild( div1 );
+
+      var nestedShadow = div1.attachShadow( { mode: "open" } );
+      var headingNested = document.createElement( "h2" );
+      headingNested.textContent = "Inside Nested Shadow DOM";
+      headingNested.id = "inside-shadow-nested";
+      nestedShadow.appendChild( headingNested );
+    </script>
+  </body>
+
+</html>

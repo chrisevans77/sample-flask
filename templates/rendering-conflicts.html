@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+
+
+<div class="content-section-full">
+
+<p>
+
+{% for rendering_js_content in rendering_conflicts %}
+
+  <li><a href="/rendering-conflicts/{{ rendering_js_content[0] }}/">{{ rendering_js_content[1] }}</a></li>
+
+{% endfor %}
+
+</p>
+
+</div>
+
+{% endblock content %}

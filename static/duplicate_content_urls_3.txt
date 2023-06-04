@@ -1,0 +1,10 @@
+http://test.chris24.co.uk/duplicate-content/AB
+http://test.chris24.co.uk/duplicate-content/AC
+http://test.chris24.co.uk/duplicate-content/AD
+http://test.chris24.co.uk/duplicate-content/AE
+http://test.chris24.co.uk/duplicate-content/AF
+http://test.chris24.co.uk/duplicate-content/BA
+http://test.chris24.co.uk/duplicate-content/CA
+http://test.chris24.co.uk/duplicate-content/DA
+http://test.chris24.co.uk/duplicate-content/EA
+http://test.chris24.co.uk/duplicate-content/FA

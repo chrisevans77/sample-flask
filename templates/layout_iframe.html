@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="Ad60B-9k1vb2RtDln1qTGySX81Og4OXILsUrezqvK34" />
+
+    {% if title %}
+
+    <title>{{ title }}</title>
+    
+    {% endif %}
+
+    {% block head %}{% endblock %}
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+    
+    <script type='text/javascript' src='https://www.deepcrawl.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    {% if canonical %}
+      <link rel="canonical" href="{{ canonical }}">
+    {% endif %}
+    {% if noindex %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
+  </head>
+
+<body>
+
+      {% block content %}{% endblock %}
+  
+</div>
+
+</body>
+</html>

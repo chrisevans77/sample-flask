@@ -1,0 +1,202 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<noscript>something</noscript>
+<link rel="next" href="http://test.chris24.co.uk/?page=2" />
+
+
+
+<meta name="google-site-verification" content="MXZxdcP2G5Ea7Fqx7DXaixNb_JElStrdZy7SIWjQDJo" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWZFBHT');</script>
+<!-- End Google Tag Manager -->
+
+{% endblock head %}
+
+{% block content %}
+
+      <meta property="og:title" content="my title" />
+      <meta property="og:description" content="my description" />
+      <meta property="og:type" content="type" />
+      <meta property="og:url" content="url" />
+      <meta property="og:image" content="image" />
+      <meta property="og:locale" content="locale" />
+      <meta property="og:site_name" content="sitename" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="site" />
+      <meta name="twitter:image" content="image" />
+      <meta name="twitter:title" content="title" />
+      <meta name="twitter:description" content="description" />
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWZFBHT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="content-intro">
+
+	<title><b>Mr. Cs Test Website<b></title>
+<p>
+These are the tests which are currently running:</p>
+
+</div>
+
+	<div class="content-section">
+
+		<h3>1. How long does Google follow links on a noindex page?</h3>
+
+		<ul>
+			<li><a href="/noindex-test/1/">Following links on noindexed page - 1</a></li> 
+			<li><a href="/noindex-test/2/">Following links on noindexed page - 2</a></li> 
+			<li><a href="/noindex-test/3/">Following links on noindexed page - 3</a></li> 
+			<li><a href="/noindex-test/4/">Following links on noindexed page - 4</a></li> 
+			<li><a href="/noindex-test/5/">Following links on noindexed page - 5</a></li>    
+			</ul>
+
+	</div>
+
+	<div class="content-section">
+
+	<h3>2. Will Google send If-Match request headers and an ETag value?</h3>
+
+		<ul>
+			<li><a href="/etag/1/">Pages with ETag Reponse Headers & 304 Response - 1</a></li> 
+			<li><a href="/etag/2/">Pages with ETag Reponse Headers & 304 Response - 2</a></li> 
+			<li><a href="/etag/3/">Pages with ETag Reponse Headers & 304 Response - 3</a></li> 
+			<li><a href="/etag/4/">Pages with ETag Reponse Headers & 304 Response - 4</a></li> 
+			<li><a href="/etag/5/">Pages with ETag Reponse Headers & 304 Response - 5</a></li>    
+		</ul>
+
+	</div>
+
+	<div class="content-section">
+
+		<h3>3. Will Google send If-Modified-Since request headers and a Last-Modified date?</h3>
+
+		<ul>
+			<li><a href="/if-modified-since/1/">Pages with Last Modified dates & 304 Response - 1</a></li> 
+			<li><a href="/if-modified-since/2/">Pages with Last Modified dates & 304 Response - 2</a></li> 
+			<li><a href="/if-modified-since/3/">Pages with Last Modified dates & 304 Response - 3</a></li>
+			<li><a href="/if-modified-since/4/">Pages with Last Modified dates & 304 Response - 4</a></li>  
+			<li><a href="/if-modified-since/5/">Pages with Last Modified dates & 304 Response - 5</a></li>  
+		</ul>
+
+	</div>
+
+	<div class="content-section">
+
+		<h3>4. What tags in the head section will cause the head section to close and Google's parsing to fail?</h3>
+
+		<ul>
+			<li><a href="/head-breaking-tags/">Pages with HTML tags in the head which end the head prematurely</a></li> 
+		</ul>
+
+	</div>
+
+	<div class="content-section">
+
+		<h3>5. How does Google handle inconsistent signals between fetched HTML and JavaScript rendered HTML?</h3>
+
+		<ul>
+			<li><a href="/rendering-conflicts/">Pages with conflicting HTML tags between fetched HTML and JavaScript rendered HTML</a></li> 
+		</ul>
+
+	</div>
+
+	<div class="content-section">
+
+		<h3>6. How does Google handle various parameters?</h3>
+
+		<ul>
+			<li><a href="/parameters/">A series of pages with various parameter configurations</a></li> 
+		</ul>
+
+	</div>
+
+	<div class="content-section">
+
+		<h3>7. How does Google handle multiple content tags?</h3>
+
+		<ul>
+			<li><a href="/multiple-content-tags/0/">A page with 2 title tags</a></li> 
+			<li><a href="/multiple-content-tags/1/">A page with 2 meta description tags</a></li>
+			<li><a href="/multiple-content-tags/2/">A page with conflicting index/noindex tags</a></li>
+			<li><a href="/multiple-content-tags/3/">A page with space separated robots tags</a></li>
+			<li><a href="/multiple-content-tags/10/">A page with noindexa robots tag</a></li>
+			<li><a href="/multiple-content-tags/11/">A page with a title tag using double quite chars</a></li>
+		</ul>
+
+	</div>
+
+	<div class="content-section">
+
+		<h3>8. Will Google discover a mobile alternate page via a reponse header links</h3>
+
+		<p>This home page returns a mobile alernate link in the response headers.</p>
+
+		<p>If Google crawls it, and it shows up in mobile search, then Google does support it</p>
+
+	</div>
+
+
+	<div class="content-section">
+
+		<h3>9. Will Google noindex pages with a noindex tag in the body?</h3>
+
+		<ul>
+			<li><a href="/body-noindex/0/">A page with an HTML encoded noindex tag in the body</a></li> 
+			<li><a href="/body-noindex/1/">A page with an unencoded noindex tag in the body</a></li>
+			<li><a href="/body-noindex/2/">A page with an unencoded noindex tag inside code tags</a></li> 
+			<li><a href="/body-noindex/3/">A page with Left/Right Quotation Marks</a></li>
+			<li><a href="/body-noindex/4/">A page with Mixed Single/Double Quotes</a></li>
+		</ul>
+	</div>
+
+
+	<div class="content-section">
+
+		<h3>10. Will Google discover a new URL via a rel=next tag?</h3>
+
+		<ul>
+			<li>A rel=next link has been added to this page. The URL is not linked directly from anywhere.</li> 
+		</ul>
+	</div>
+
+	<div class="content-section">
+
+		<h3>11. Will Google Crawl encoded and unencoded ULRs against encoded an unencoded robots.txt rules?</h3>
+
+		<ul>
+			<li><a href="/unencoded%7C">A URL with encoded char, unencoded rule</a></li>
+			<li><a href="/encoded%40">A URL with encoded char, encoded rule</a></li>
+		</ul>
+	</div>
+
+<div class="content-section">
+
+		<h3>12. Image Tag Tests</h3>
+
+		<ul>
+			<li><a href="/images.html">Some image tags with missing/malformed SRC attributes</a></li>
+		</ul>
+	</div>
+
+<iframe src="https://test.chris24.co.uk/iframe" title="embedded iframe"></iframe>
+
+
+<div class="content-section">
+
+		<ul>
+			<li><a href="/deepcrawl">Disallowed Link</a></li>
+			<li><a href="/lumar">Disallowed Link</a></li>
+			<li><a href="/404.html">Link to 404</a></li>
+		</ul>
+	</div>
+
+<img src="http://test.chris24.co.uk/static/image-3-1024x1024.webp">
+
+{% endblock content %}

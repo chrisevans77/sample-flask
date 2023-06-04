@@ -1,0 +1,12 @@
+http://test.chris24.co.uk/duplicate-content/AAA
+http://test.chris24.co.uk/duplicate-content/AAB
+http://test.chris24.co.uk/duplicate-content/ABA
+http://test.chris24.co.uk/duplicate-content/BBA
+http://test.chris24.co.uk/duplicate-content/BBB
+http://test.chris24.co.uk/duplicate-content/AAC
+http://test.chris24.co.uk/duplicate-content/BAA
+http://test.chris24.co.uk/duplicate-content/BAB
+http://test.chris24.co.uk/duplicate-content/BAC
+http://test.chris24.co.uk/duplicate-content/CAA
+http://test.chris24.co.uk/duplicate-content/CAB
+http://test.chris24.co.uk/duplicate-content/CAC

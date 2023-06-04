@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+{% if document_description %}
+      <meta name="description" content="{{ document_description }}">
+    {% endif %}
+
+{% endblock head %}
+
+{% block content %}
+
+
+<div class="content-section-full">
+
+{% if document_description %}
+{% if root_page == False %}
+
+<p class="content-intro">{{document_description}}</p>
+<p class="content-intro">{{randomtext1}}</p>
+{% endif %}
+
+{% if root_page == True %}
+<p class="content-intro">{{document_description}}</p>
+
+{% for key in parameters_dict %}
+
+<p class="content-section">
+<b><a href={{key}}>{{parameters_dict[key][0]|safe}}</a></b></br>
+{{parameters_dict[key][1]|safe}}</br>
+</p>
+
+{% endfor %}
+
+
+
+{% endif %}
+
+{% endif %}
+
+</div>
+
+
+
+{% endblock content %}

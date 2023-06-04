@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+{% if document_description %}
+      <meta name="description" content="{{ document_description }}">
+    {% endif %}
+
+{% endblock head %}
+
+{% block content %}
+
+<script>
+      // fired as soon as the page DOM has been loaded
+      window.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelector('meta[name="description"]').setAttribute("content", "DOMContentLoaded");
+
+      });
+      // fired when the whole page has loaded
+      window.addEventListener("load", (event) => {
+        document.querySelector('meta[name="description"]').setAttribute("content", "Load");
+      });
+
+      const getRemoteContent = async (arg) => {
+        const res = await fetch("https://api.github.com/gists/df0eb64efa4ecd78552cf37f8cc941de");
+        const json = await res.json();
+        await new Promise((resolve) => setTimeout(resolve, arg * 250));
+        var description = `modified after fetch call ${arg}`;
+                document.querySelector('meta[name="description"]').setAttribute("content", description);
+
+      };
+
+      getRemoteContent(1);
+      getRemoteContent(2);
+      getRemoteContent(3);
+      getRemoteContent(4);
+      getRemoteContent(5);
+      getRemoteContent(6);
+      getRemoteContent(7);
+      getRemoteContent(8);
+      getRemoteContent(9);
+      getRemoteContent(10);
+      getRemoteContent(11);
+      getRemoteContent(12);
+      getRemoteContent(13);
+      getRemoteContent(14);
+      getRemoteContent(15);
+      getRemoteContent(16);
+      getRemoteContent(17);
+      getRemoteContent(18);
+      getRemoteContent(19);
+      getRemoteContent(20);
+      getRemoteContent(21);
+
+
+    </script>
+
+<script>
+function getWidth() {
+  return Math.max(
+    document.body.scrollWidth,
+    document.documentElement.scrollWidth,
+    document.body.offsetWidth,
+    document.documentElement.offsetWidth,
+    document.documentElement.clientWidth
+  );
+}
+
+function getHeight() {
+  return Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.offsetHeight,
+    document.documentElement.clientHeight
+  );
+}
+
+
+var link = document.createElement('meta')
+link.setAttribute('property', 'viewport-width')
+link.content = getWidth()
+document.getElementsByTagName('head')[0].appendChild(link);
+
+
+var link = document.createElement('meta')
+link.setAttribute('property', 'viewport-height')
+link.content = getHeight()
+document.getElementsByTagName('head')[0].appendChild(link);
+
+
+ document.title = getWidth() + "*" + getHeight()
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+     $(document).ready(function(e) {
+   showViewportSize();
+});
+$(window).resize(function(e) {
+   showViewportSize();
+});
+function showViewportSize() {
+   var the_width = $(window).width();
+   var the_height = $(window).height();
+   $('#width').text(the_width);
+   $('#height').text(the_height);
+}
+    </script>
+<h1>The benfrain.com super simple, what size is my viewport page?</h1>
+<h2>Viewport Width:</h2>
+<p id="width">Resize to find out!</p>
+<h2>Viewport Height:</h2>
+<p id="height">Resize to find out!</p>
+
+{% endblock content %}

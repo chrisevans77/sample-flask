@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+
+
+<div class="content-section-full">
+
+{% for tag_name in head_breaking_tags_list %}
+
+  <li><a href="/head-breaking-tags/{{ tag_name[0] }}/">{{ tag_name[2] }}</a></li>
+
+{% endfor %}
+
+</div>
+
+{% endblock content %}

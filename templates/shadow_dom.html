@@ -1,0 +1,28 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>H1 in the source</h1>
+		<script>
+  class MyComponent extends HTMLElement {
+    constructor() {
+      super();
+      this.attachShadow({ mode: 'open' });
+    }
+
+    connectedCallback() {
+      let p = document.createElement('p');
+      p.innerHTML = '<slot><h1>A Shadow DOM H1</h1></slot>';
+      this.shadowRoot.appendChild(p);
+    }
+  }
+
+  window.customElements.define('my-component', MyComponent);
+</script>
+
+<my-component>
+  <h1>Light DOM H1</h1>
+</my-component>
+
+	</body>
+</html>

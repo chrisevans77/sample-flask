@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+
+<div class="content-intro">
+
+<p>This page has a noindex tag in the page body</p>
+
+</div>
+
+<div class="content-section-full">
+
+	<p>{{randomtext}}</p>
+
+	{{tag_content|safe}}
+	
+</div>
+
+
+
+{% endblock content %}

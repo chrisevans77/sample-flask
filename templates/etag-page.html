@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+ 
+
+<div class="content-section-full">
+
+	<p>This is a target page to see if Google sends an etag request header.</p>
+
+	<p>The etag for this page is {{etag}}</p>
+
+	<p>The If-Match header sent in the request is {{if_match_request_header}}</p>
+
+	<p>If an If-Match header is sent, which matches the ETag value, a 304 response will be returned. Which clearly hasn't happened in this instance.</p>
+
+	<p>Here is some text to keep Google's interest.</p>
+
+	<p>{{randomtext}}</p>
+	
+</div>
+
+{% endblock content %}

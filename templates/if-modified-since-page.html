@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+ 
+<div class="content-section-full">
+	
+	<p>This is a target page to see if Google sends an If-Modified-Since request header.</p>
+
+	<p>The Last-Modified date for this page is {{last_modified_date_string}}</p>
+
+	<p>The If-Modified Since header sent in the request is {{if_modified_since_date_string}}</p>
+
+	<p>If the If-Modified-Since date is earlier than the Last-Modified date, a 304 response will be returned. Which clearly hasn't happened in this instance.</p>
+
+	<p>Here is some text to keep Google's interest.</p>
+
+	<p>{{randomtext}}</p>
+
+</div>
+
+{% endblock content %}

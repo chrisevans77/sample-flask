@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://test.chris24.co.uk/duplicate-content/ABCD</loc>
+  </url>
+  <url>
+    <loc>http://test.chris24.co.uk/duplicate-content/BCDE</loc>
+  </url>
+  <url>
+    <loc>http://test.chris24.co.uk/duplicate-content/CDEF</loc>
+  </url>
+  <url>
+    <loc>http://test.chris24.co.uk/duplicate-content/DEFG</loc>
+  </url>
+   <url>
+    <loc>http://test.chris24.co.uk/duplicate-content/DEFH</loc>
+  </url>
+  <url>
+    <loc>http://test.chris24.co.uk/duplicate-content/DEFI</loc>
+  </url>
+
+
+</urlset>

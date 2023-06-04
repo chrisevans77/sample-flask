@@ -1,0 +1,4 @@
+http://test.chris24.co.uk/duplicate-content/AB
+http://test.chris24.co.uk/duplicate-content/BC
+http://test.chris24.co.uk/duplicate-content/CD
+http://test.chris24.co.uk/duplicate-content/DA

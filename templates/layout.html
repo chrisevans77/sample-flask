@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="q1-bfbhMLj7hLZjZrgLxvKPnaCTuJiC7jfTrVnElSdQ" />
+
+    {% if title %}
+
+    <title>{{ title }}</title>
+    
+    {% endif %}
+
+    {% block head %}{% endblock %}
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+    
+    <script type='text/javascript' src='http://www.deepcrawl.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <link rel="stylesheet" type="text/css" href="http://test.chris24.co.uk/static/main.css">
+    {% if canonical %}
+      <link rel="canonical" href="{{ canonical }}">
+    {% endif %}
+    {% if noindex %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
+  </head>
+
+<body>
+
+<div id="content">
+
+    <div class="page-header">
+      <h1>{{ title }}</h1>
+    </div>
+
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+    </div>
+
+      {% block content %}{% endblock %}
+  
+</div>
+
+</body>
+</html>
